@@ -181,9 +181,10 @@ func (r *runner) Run() {
 	}
 
 	// FIXME: Each test case is saving the entire test run's output. This should be fixed so that only the test case's output is saved.
-	for i, _ := range r.stats {
-		r.stats[i].Output = r.output
-	}
+	// for i, _ := range r.stats {
+	// 	r.stats[i].Output = r.output
+	// }
+	r.stats[0].Output = r.output
 }
 
 // -----
